@@ -19,7 +19,7 @@ foreach((array)$initial_products as $product){
     $stmt->execute([
         'id_p' => $id_p,
         'nom_p' => $nom_p,
-        'description' => $description_p,
+        'description_p' => $description_p,
         'prix_p' => $prix_p,
         'image_p'=> $image_p
     ]);
