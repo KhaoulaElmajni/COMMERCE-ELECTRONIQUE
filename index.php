@@ -1,6 +1,5 @@
 <?php
 
-
 require_once('./autoload.php');
 require_once("./views/includes/header.php");
 
@@ -10,7 +9,7 @@ $pages = [
     'home','cart','dashboard',
     'updateProduct','deleteProduct',
     'addProduct','emptyCart','show',
-    'cancelCart','register','login',
+    'cancelcart','register','login',
     'checkout','logout','products',
     'orders','addOrder'
 ];

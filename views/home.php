@@ -1,4 +1,5 @@
 <?php
+include("./views/includes/navbar.php"); 
     $categories = new CategoriesController();
     $categories = $categories->getAllCategories();
 
@@ -11,7 +12,12 @@
     $data = new ProductsController();
     $products = $data->getAllProducts();
     }
+    
 ?>
+
+
+
+
 
 
 <section class="jumbotron text-center">
@@ -55,7 +61,7 @@
                 <div class="card-header bg-success text-white text-uppercase">
                     <i class="fa fa-heart"></i> Top product
                 </div>
-                <img class="img-fluid border-0" src="http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg" alt="Card image cap">
+                <img class="img-fluid border-0" src="http://img.bbystatic.com/BestBuy_US/images/products/1582/1582884_sa.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title text-center"><a href="product.html" title="View Product">Product title</a></h4>
                     <div class="row">
@@ -71,8 +77,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 <div class="container">

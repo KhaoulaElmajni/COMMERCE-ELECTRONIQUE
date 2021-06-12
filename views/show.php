@@ -1,4 +1,5 @@
 <?php
+include("./views/includes/navbar.php"); 
     $data = new ProductsController();
     $product = $data->getProduct();
     
