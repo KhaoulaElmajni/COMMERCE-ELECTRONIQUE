@@ -38,7 +38,9 @@ include("./views/includes/navbar.php");
                     
                 </tbody>
             </table>
-            <div id="paypal-button-container"></div>
+              <?php if(isset($_SESSION["count"]) && $_SESSION["count"]>0):?>
+                  <div id="paypal-button-container"></div>
+              <?php endif; ?>
         </div> 
         <div class="col-4 col-md-4 float-right bg-white mt-4">
                 <table class="table table-bordered">
@@ -59,14 +61,18 @@ include("./views/includes/navbar.php");
                         </tr>
                     </tbody>
                 </table>
-           </div>
-            <?php if(isset($_SESSION["count"])) :?>
+                <?php if(isset($_SESSION["count"]) && $_SESSION["count"] > 0):?>
                 <form method="post" action="<?php echo BASE_URL;?>emptyCart">
-                   <button type="submit" class="btn btn-primary"> 
+                  <button type="submit" class="btn btn-primary"> 
                         Annuler l'achat
                     </button>
                 </form>
+                <form method="post" id="addCommande" action="<?php echo BASE_URL;?>addCommande">
+                  
+                </form>
             <?php endif; ?>
+           </div>
+            
     </div>
 </div>
 
@@ -90,9 +96,9 @@ include("./views/includes/navbar.php");
       return actions.order.capture().then(function(details) {
         // This function shows a transaction success message to your buyer.
         alert('Votre Commande a effectuée par ' + details.payer.name.given_name);
-        document.querySelector('#addOrder').submit();
+        document.querySelector("#addCommande").submit();
       });
-    }
+    } 
   }).render('#paypal-button-container');
   //This function displays Smart Payment Buttons on your web page.
 </script>

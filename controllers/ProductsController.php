@@ -28,8 +28,8 @@ class ProductsController{
 
     public function emptyCart($id,$prix){
         unset($_SESSION["products_".$id]);
+        $_SESSION["totaux"] = $_SESSION["totaux"] - $prix;
         $_SESSION["count"] -= 1;
-        $_SESSION["totaux"] -= $prix;
         Redirect::to("cart");
     }
 }

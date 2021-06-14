@@ -14,32 +14,32 @@
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/khaoula.elmajni/?_rdc=1&_rdr" role="button"
         ><i class="fab fa-facebook-f"></i
       ></a>
 
       <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/ElmajniK" role="button"
         ><i class="fab fa-twitter"></i
       ></a>
 
       <!-- Google -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button"
         ><i class="fab fa-google"></i
       ></a>
 
       <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/elmajnikhaoula99/?hl=fr" role="button"
         ><i class="fab fa-instagram"></i
       ></a>
 
       <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/khaoula-elmajni/" role="button"
         ><i class="fab fa-linkedin-in"></i
       ></a>
 
       <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/KhaoulaElmajni" role="button"
         ><i class="fab fa-github"></i
       ></a>
     </section>
@@ -174,7 +174,7 @@
               <a href="#!" class="text-white">Link 3</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="text-white"><i class="fa fa-envelope"></i> Link 4</a>
             </li>
           </ul>
         </div>
@@ -188,8 +188,8 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    ©2021 Copyright:
+    <a class="text-white" href="https://khaoulaelmajni.blogspot.com/?fbclid=IwAR1fxjj1lNaPB1Z1S8vhF_5cXk1qk1DOIKRs4ZUpjEnjYsd8DP45KjqklxQ">ElmajniKhaoula.com</a>
   </div>
   <!-- Copyright -->
 </footer>

@@ -22,8 +22,8 @@ include("./views/includes/navbar.php");
 
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading">E-COMMERCE BOOTSTRAP THEME</h1>
-        <p class="lead text-muted mb-0">Simple theme for e-commerce buid with Bootstrap 4.0.0. Pages available : home, category, product, cart &amp; contact</p>
+        <h1 class="jumbotron-heading">SITE E-COMMERCE ONLINE</h1>
+        <p class="lead text-muted mb-1">Bonjour chers visiteurs veuillez s'amuser en naviguant et trouver vos meilleurs opportunités : les meilleurs produits &amp; les meilleurs prix</p>
     </div>
 </section>
 <div class="container">
@@ -37,13 +37,13 @@ include("./views/includes/navbar.php");
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="https://dummyimage.com/855x365/55595c/fff" alt="First slide">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603__340.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://dummyimage.com/855x365/a30ca3/fff" alt="Second slide">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/08/29/17/07/ecommerce-3640321__340.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="https://dummyimage.com/855x365/1443ff/fff" alt="Third slide">
+                        <img class="d-block w-100" src="http://lorempixel.com/855/365/" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -59,17 +59,17 @@ include("./views/includes/navbar.php");
         <div class="col-12 col-md-3">
             <div class="card">
                 <div class="card-header bg-success text-white text-uppercase">
-                    <i class="fa fa-heart"></i> Top product
+                    <i class="fa fa-heart"></i> Top produit
                 </div>
                 <img class="img-fluid border-0" src="http://img.bbystatic.com/BestBuy_US/images/products/1582/1582884_sa.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title text-center"><a href="product.html" title="View Product">Product title</a></h4>
                     <div class="row">
                         <div class="col">
-                            <p class="btn btn-danger btn-block">99.00 $</p>
+                            <p class="btn btn-danger btn-block">99.00 MAD</p>
                         </div>
                         <div class="col">
-                            <a href="product.html" class="btn btn-success btn-block">View</a>
+                            <a href="product.html" class="btn btn-success btn-block">Afficher</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ include("./views/includes/navbar.php");
         <div class="col-md-8">
             <div class="row">
             <div class="card-header bg-primary text-white text-uppercase">
-                    <i class="fa fa-star"></i> Last products
+                    <i class="fa fa-star"></i> Nos derniers produits
                 </div>
                 <br>
                 <?php
