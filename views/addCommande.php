@@ -1,18 +1,17 @@
 <?php
 
 $commande = new CommandeController();
-
-foreach($_SESSION as $nom => $product){
-    if(substr($nom,0,9) == "products_"){
-        $data = array(
-            "nom_com" => "khaoula",
-            "produit_com" => $product["title"],
-            "qte_com" => $product["qte"],
-            "prix_com" => $product["prix"],
-            "total_com" => $product["total"] 
-        );
-        $commande->addCommande($data);
+foreach($_SESSION as $name => $product){
+    if(substr($name,0,9) == "products_"){
+       $data = array(
+        "fullname" => $_SESSION["username"],
+        "product" => $product["title"],
+        "qte" => $product["qte"],
+        "price" => $product["prix"],
+        "total" => $product["total"]
+       );
+       $commande->addCommande($data);
     }else{
-       Redirect::to("home");
+        Redirect::to("home");
     }
 }

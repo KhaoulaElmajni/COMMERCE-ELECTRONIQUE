@@ -1,6 +1,12 @@
 <?php
 
 class CommandeController{
+
+    public function getAllCommandes(){
+        $commandes = Commande::getAll();
+        return $commandes;
+    }
+
     public function addCommande($data){
         $result = Commande::CreateCommande($data);
         if($result === "1"){

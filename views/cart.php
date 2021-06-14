@@ -38,8 +38,10 @@ include("./views/includes/navbar.php");
                     
                 </tbody>
             </table>
-              <?php if(isset($_SESSION["count"]) && $_SESSION["count"]>0):?>
+              <?php if(isset($_SESSION["count"]) && $_SESSION["count"]>0 && isset($_SESSION["logged"])):?>
                   <div id="paypal-button-container"></div>
+              <?php elseif(isset($_SESSION["count"]) && $_SESSION["count"]>0): ?>
+              <a href="<?php echo BASE_URL; ?>login" class="btn btn-link">Connectez vous pour terminer vos achats </a>
               <?php endif; ?>
         </div> 
         <div class="col-4 col-md-4 float-right bg-white mt-4">
@@ -67,9 +69,7 @@ include("./views/includes/navbar.php");
                         Annuler l'achat
                     </button>
                 </form>
-                <form method="post" id="addCommande" action="<?php echo BASE_URL;?>addCommande">
-                  
-                </form>
+                <form method="post" id="addCommande" action="<?php echo BASE_URL;?>addCommande"></form>
             <?php endif; ?>
            </div>
             

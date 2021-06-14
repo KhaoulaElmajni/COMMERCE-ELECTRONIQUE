@@ -33,11 +33,15 @@
                 Compte
             </button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="<?php echo BASE_URL;?>register">Inscrire</a>
-                <a class="dropdown-item" href="<?php echo BASE_URL;?>login">Connecter</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="<?php echo BASE_URL;?>logout">Déconnecter</a>
+            <?php if(isset($_SESSION["logged"]) && $_SESSION["logged"]===true):?>
+              <a class="dropdown-item" href="<?php echo BASE_URL;?>userProfile"><?php echo $_SESSION["username"];?></a>
+              <a class="dropdown-item" href="<?php echo BASE_URL;?>logout">Déconnecter</a>
+                <?php else:?>
+                  <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="<?php echo BASE_URL;?>register">Inscrire</a>
+                    <a class="dropdown-item" href="<?php echo BASE_URL;?>login">Connecter</a>  
             </div>
+            <?php endif; ?>
             </div>
         </li>
       </ul>     
